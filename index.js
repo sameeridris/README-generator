@@ -26,8 +26,9 @@ inquirer
         },
         {
             name: 'license',
-            type: 'choice',
+            type: 'list',
             message: 'What license would you like to run?',
+            choices: ["MIT License", "Apache License 2.0", "Eclipse Public License 2.0", "The Unlicense"],
         },
         {
             name: 'contributing',
