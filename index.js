@@ -46,42 +46,43 @@ inquirer
         },
     ])
     .then((response) => {
-        fs.writeFile('README.md', `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Mini Project</title>
-</head>
-<body>
-    <h1>
-        ${response.name}
-    </h1>
-    <h2>
-        Im based in ${response.location}.
-    </h2>
-    <section>
-        ${response.bio}
-    </section>
-    <nav>
-        Contact me: 
-        <ul>
-            <li>LinkedIn URL: ${response.LinkedInUrl}</li>
-            <li>GitHub URL: ${response.GitHubURL}</li>
-            <li>Email: (insert mailto link)</li>
-        </ul>
-    </nav>
-</body>
-</html>`, (err) =>
-            err ? console.log(err) : console.log('Successfully created index HTML file!')
+        fs.writeFile('README.md', `# <${response.title}>
+
+## Description
+
+${response.description}
+
+## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+
+${response.instillation}
+
+## Usage
+
+${response.usage}
+
+## License
+
+${response.license}
+
+## How to Contribute
+
+${response.contributing}
+
+## Tests
+
+${response.tests}
+
+## Questions
+
+${response.questions}
+`, (err) =>
+            err ? console.log(err) : console.log('Successfully created README.md file!')
         );
-    })
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+    });
