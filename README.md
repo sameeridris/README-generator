@@ -33,4 +33,4 @@ Install Jest as a development dependency, write test cases and use npm test.
 
 ## Questions
 
-If you have questions, issues, or suggestions regarding this project, feel free to reach out to me through my GitHub profile or my Email.
+If you have questions, issues, or suggestions regarding this project, feel free to reach out to me through my GitHub profile: https://github.com/sameeridris or my Email: sameeridris610@gmail.com
