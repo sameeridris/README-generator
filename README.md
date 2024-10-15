@@ -6,10 +6,13 @@ I created a command-line application that generates a professional README file.
 
 ## Table of Contents 
 
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
