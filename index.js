@@ -47,7 +47,7 @@ inquirer
         },
     ])
     .then((response) => {
-        fs.writeFile('README.md', `# <${response.title}>
+        fs.writeFile('sample_README.md', `# <${response.title}>
 
 ## Description
 
